@@ -94,7 +94,9 @@ class DataIngestion:
             logging.info(
                 "Exited initiate_data_ingestion method of Data_Ingestion class"
             )
-
+            with open(r'C:\Users\Prathamesh\MLOPS\mlops_project_1\tinmestamp_logs.txt','a') as f:
+                f.write(f'inside data_ingeston.py initiate_data_ingestion, trainedfilepath is {self.data_ingestion_config.training_file_path}\n')
+                f.write(f'inside data_ingeston.py initiate_data_ingestion, testfilepath is {self.data_ingestion_config.testing_file_path}\n')
             data_ingestion_artifact = DataIngestionArtifact(trained_file_path=self.data_ingestion_config.training_file_path,
             test_file_path=self.data_ingestion_config.testing_file_path)
             
