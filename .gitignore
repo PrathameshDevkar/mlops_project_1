@@ -209,3 +209,4 @@ notebook/data.csv
 artifact/
 mongo_db_connection_string.txt
 tinmestamp_logs.txt
+notebook/
